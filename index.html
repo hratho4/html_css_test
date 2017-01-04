@@ -92,9 +92,10 @@
 		ul{
 			margin : 0;
 			padding: 0;
+			list-style: none;
 		}
 
-		li{
+		.nav-menu li{
 			float: left;
 			width: auto;
 			padding: 10px;
@@ -197,6 +198,61 @@
 			font-size: 18px;
 		}
 
+		#info ul{
+			padding-left: 10px;
+			padding-bottom: 20px;
+			padding-right: 20%;
+
+		}
+
+
+		#info li:before{
+			content: '+';
+			float: left; 
+			padding-right: 5px;
+			margin-top: -7px;
+			margin-left: -12px;
+			font-size: 25px;
+			font-style: bold;
+			color: rgb(181, 74, 160);
+		}
+
+		#object_card
+		{
+			background-color: rgb(181, 74, 160);
+			width: 316px;
+			height: 275px;
+			max-width: 316px;
+			max-height: 275px;
+			margin-left: 2.5%;
+
+		}
+
+		#object_card div{
+			position: relative;
+			padding-left: 25px;
+			padding-right: 25px;
+			color: white;
+			max-width: 316px;
+			height: 275px;
+			overflow: auto;
+		}
+
+		#object_card_title{
+			font-size: 28px;
+		}
+
+		#right_arrows{
+			color:rgb(80,190,175); 
+			position: absolute; 
+			bottom:0px; 
+			right:25px; 
+			font-size:62px;
+			margin-bottom: 10px;
+			letter-spacing: -20px;
+
+		}
+
 		/* Mobile styles */
 		@media only screen and (max-width: 480px) {
 		    h1 {
@@ -241,12 +297,18 @@
 			<div class = "col-6" id="info_card"> 
 				<h3 class ="klavika_bold_font" style="color:rgb(80,190,175)">Concentrated US Equity Portfolio</h3>
 				<div class ="klavika_light_font" id = "info">
-					<p>+ <span> It’s getting harder for companies to expand profit margins, so firms that can increase revenue may have an advantage.</span></p>
-					<p>+ <span> An index may overlook high revenue growers that have a better chance of posting stronger earnings in this tough environment.</span></p>
+					<ul> 
+						<li>It’s getting harder for companies to expand profit margins, so firms that can increase revenue may have an advantage.</li>
+						<li>An index may overlook high revenue growers that have a better chance of posting stronger earnings in this tough environment.</li>
+					</ul>
 				</div> 
 			</div> 
-			<div class = "col-6" id="more_card"> 
-
+			<div class = "col-6" id="object_card"> 
+				<div class= "klavika_light_font">
+					<p class="klavika_bold_font" id="object_card_title">INVESTING IN QUALITY AND STABLE COMPANIES</p> 
+					<p style="position: absolute; bottom:0; font-size: 20px;">LEARN MORE</p>
+					<p id="right_arrows">&#9002;&#9002;</p>
+				</div> 
 			</div> 
 
 		</div>  
